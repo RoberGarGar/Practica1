@@ -10,7 +10,7 @@
     tools:layout_editor_absoluteY="48dp">
 
     <EditText
-        android:id="@+id/EDT_text"
+        android:id="@+id/messageEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -26,20 +26,20 @@
         app:layout_constraintVertical_bias="0.228" />
 
     <Button
-        android:id="@+id/BT_1"
+        android:id="@+id/sendMessageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray"
         android:text="Send Message"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/BT_2"
+        app:layout_constraintEnd_toStartOf="@+id/changeBackgroundButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.464" />
 
     <Button
-        android:id="@+id/BT_3"
+        android:id="@+id/goUrlButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray"
@@ -47,25 +47,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/BT_2"
+        app:layout_constraintStart_toEndOf="@+id/changeBackgroundButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.464" />
 
     <Button
-        android:id="@+id/BT_2"
+        android:id="@+id/changeBackgroundButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray"
-        android:text="BUTTON 2"
+        android:text="Background"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/BT_3"
+        app:layout_constraintEnd_toStartOf="@+id/goUrlButton"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/BT_1"
+        app:layout_constraintStart_toEndOf="@+id/sendMessageButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.464" />
 
     <TextView
-        android:id="@+id/TV_TITLE"
+        android:id="@+id/titleMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ENTER MESSAGE"

@@ -16,9 +16,9 @@ class Practica1ActivityB : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_practica1_b)
 
-        val button4: Button = findViewById(R.id.BT_4)
-        val button5: Button = findViewById(R.id.BT_5)
-        val button6: Button = findViewById(R.id.BT_6)
+        val redButton: Button = findViewById(R.id.redButton)
+        val orangeButton: Button = findViewById(R.id.orangeButton)
+        val blueButton: Button = findViewById(R.id.blueButton)
         val bundle=intent.extras
         val dato = bundle?.getString("textinfo")
 
@@ -28,7 +28,7 @@ class Practica1ActivityB : AppCompatActivity() {
             Toast.makeText(this,dato,Toast.LENGTH_SHORT).show()
         }
 
-        button4.setOnClickListener{
+        redButton.setOnClickListener{
 
             val stringColor = getResources().getString(R.color.white_red)
             val intent = Intent(this, MainActivity::class.java)
@@ -37,7 +37,7 @@ class Practica1ActivityB : AppCompatActivity() {
             finish()
         }
 
-        button5.setOnClickListener{
+        orangeButton.setOnClickListener{
 
             val stringColor = getResources().getString(R.color.white_orange)
             val intent = Intent(this, MainActivity::class.java)
@@ -46,7 +46,7 @@ class Practica1ActivityB : AppCompatActivity() {
             finish()
         }
 
-        button6.setOnClickListener{
+        blueButton.setOnClickListener{
 
             val stringColor = getResources().getString(R.color.white_blue)
             val intent = Intent(this, MainActivity::class.java)

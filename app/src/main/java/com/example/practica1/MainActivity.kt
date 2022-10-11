@@ -18,12 +18,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_practica1_activity)
 
-        val editText1: EditText = findViewById(R.id.EDT_text)
-        val button1: Button = findViewById(R.id.BT_1)
-        val button2: Button = findViewById(R.id.BT_2)
-        val button3: Button = findViewById(R.id.BT_3)
+        val editText1: EditText = findViewById(R.id.messageEditText)
+        val sendMessageButton: Button = findViewById(R.id.sendMessageButton)
+        val changeBackgroundButton: Button = findViewById(R.id.changeBackgroundButton)
+        val goUrlButton: Button = findViewById(R.id.goUrlButton)
 
-        button1.setOnClickListener{
+        sendMessageButton.setOnClickListener{
 
             val editTextInfo: String = editText1.getText().toString()
             val intent = Intent(this, Practica1ActivityB::class.java)
@@ -31,13 +31,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-       button2.setOnClickListener{
+        changeBackgroundButton.setOnClickListener{
 
            startActivityForResult(Intent(this, Practica1ActivityB::class.java),myRequestCode)
 
         }
 
-        button3.setOnClickListener{
+        goUrlButton.setOnClickListener{
             val intentWeb = Intent()
             intentWeb.action = Intent.ACTION_VIEW
             intentWeb.data = Uri.parse("https://codelabs.developers.google.com/android-training/")
