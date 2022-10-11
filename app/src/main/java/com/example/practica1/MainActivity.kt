@@ -18,14 +18,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_practica1_activity)
 
-        val editText1: EditText = findViewById(R.id.messageEditText)
+        val messageEditText: EditText = findViewById(R.id.messageEditText)
         val sendMessageButton: Button = findViewById(R.id.sendMessageButton)
         val changeBackgroundButton: Button = findViewById(R.id.changeBackgroundButton)
         val goUrlButton: Button = findViewById(R.id.goUrlButton)
 
         sendMessageButton.setOnClickListener{
 
-            val editTextInfo: String = editText1.getText().toString()
+            val editTextInfo: String = messageEditText.getText().toString()
             val intent = Intent(this, Practica1ActivityB::class.java)
             intent.putExtra("textinfo",editTextInfo)
             startActivity(intent)
